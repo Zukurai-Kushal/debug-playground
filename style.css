@@ -1,19 +1,101 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+    4.1 Fallback fonts
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
 @font-face {
     font-family: RingBearer;
     src: url('./RingbearerMedium-51mgZ.ttf');
 }
 
 :root{
+    --color-background: #f8e8b5;
     --color-black: #010101;
+    --color-dark-blue: #22353f;
+    --color-dark-tint: #01010162;
+    --color-highlight: #eb9866;
+    --color-footer: #386677;
     --color-white: #fdfaf1;
 }
 
 
 body{
-    background-color: var(--color-white);
+    background-color: var(--color-background);
     color: var(--color-black);
     font-family: 'RingBearer';
     font-size: 1rem;
+}
+
+header{
+    padding: 10px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+header h1{
+    text-shadow: 5px 5px 0 var(--color-highlight);
+}
+
+nav{
+    margin: 20px auto;
+    font-size: 1rem;
+    max-width: 500px;
+}
+
+nav button{
+    color: currentColor;
+    border: none;
+    background-color: transparent;
+    padding: 10px 50px;
+    font-weight: 700;
+}
+
+nav button:hover{
+    background-color: var(--color-highlight);
 }
 
 #test{
@@ -21,5 +103,4 @@ body{
     max-inline-size: 66ch;
     line-height: 1.5;
     margin: 50px auto;
-
 }
