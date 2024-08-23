@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: RingBearer;
-    src: url('./RingbearerMedium-51mgZ.ttf');
+    src: url('./RingbearerMedium-51mgZ.ttf') format('truetype');;
 }
 
 :root{
