@@ -1,6 +1,6 @@
 @font-face {
     font-family: RingBearer;
-    src: url('../../global_resources/RingbearerMedium-51mgZ.ttf');
+    src: url('./RingbearerMedium-51mgZ.ttf');
 }
 
 :root{
