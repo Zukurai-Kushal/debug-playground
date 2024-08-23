@@ -1,0 +1,25 @@
+@font-face {
+    font-family: RingBearer;
+    src: url('../../global_resources/RingbearerMedium-51mgZ.ttf');
+}
+
+:root{
+    --color-black: #010101;
+    --color-white: #fdfaf1;
+}
+
+
+body{
+    background-color: var(--color-white);
+    color: var(--color-black);
+    font-family: 'RingBearer';
+    font-size: 1rem;
+}
+
+#test{
+    font-size: 2rem;
+    max-inline-size: 66ch;
+    line-height: 1.5;
+    margin: 50px auto;
+
+}
