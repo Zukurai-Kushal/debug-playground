@@ -28,6 +28,11 @@ body{
     font-size: 2rem;
 }
 
+.large{
+    font-size: 5rem;
+    text-align: center;
+}
+
 .bold{
     font-weight: 700;
 }
